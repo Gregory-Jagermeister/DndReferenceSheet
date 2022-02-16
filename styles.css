@@ -1,4 +1,5437 @@
-/* Sets all the text color to red! */
-body {
-    color: red;
+.refpage{
+    padding: 10px;
+    font-size: 12pt;
+}
+
+.section-title{
+  height: 32px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-family: 'Draconis';
+  font-variant: small-caps;
+  font-weight: bold;
+  background-color: inherit;
+  color: white;
+  font-size: 16pt;
+}
+.section-subtitle {
+	color: rgba(172, 20, 20, 0.986);
+	font-size: 16pt;
+    margin: 0;
+}
+
+.section-text{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 10pt;
+    color: white;
+    font-style: italic;
+}
+
+.section-row {
+	font-size: 10pt;
+    flex: content;
+    background-color: inherit;
+}
+.item {
+	margin-bottom: 8px;
+	display: flex;
+	font-size: inherit;
+	vertical-align: top;
+    background-color: inherit;
+	box-sizing: border-box;
+	cursor: pointer;
+
+}
+
+.itemsize {
+	height: 44px;
+	width: 20%;
+}
+
+.item-icon {
+	float: left;
+	flex: 0 0 auto;
+	background-repeat: no-repeat;
+	background-size: contain;
+    background-color: inherit;
+	box-sizing: border-box;
+	border-radius: 4px;
+	display: inline-block;
+	margin-right: 4px;
+    background-color: maroon;
+    border-color: maroon;
+}
+
+.iconsize {
+	width: 44px;
+	height: 44px;
+}
+
+.item-text-container {
+	flex: 5;
+	padding-right: 4px;
+	font-size: inherit;
+	height: 100%;
+}
+
+.item-title {
+	font-weight: bold;
+	font-size: inherit;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.item-desc {
+	font-style: italic;
+	font-size: inherit;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.section-content {
+	padding: 8px;
+	padding-bottom: 0;
+	border-radius: 8px;
+	margin-top: 0;
+	background-color: inherit;
+	border-color: inherit;
+	font-size: inherit;
+}
+
+.clear{
+    clear: both;
+}
+
+.float-right{
+    float: right;
+}
+
+.section-container{
+        border-radius: 8px;
+        box-sizing: border-box;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        /* font-family: Arial; */
+        font-family: 'Noto Sans',
+        'Myriad Pro',
+        Calibri,
+        Helvetica,
+        Arial,
+        sans-serif;
+        width: 100%;
+        margin-bottom: 8px;
+        page-break-inside: avoid;
+        flex-wrap: wrap;
+}
+
+.item-text-container {
+	flex: 1;
+	padding-right: 4px;
+	font-size: inherit;
+	height: 100%;
+}
+
+#section-movement,
+#section-movement .item-icon {
+	
+	
+}
+
+#section-movement .text {
+	color: maroon;
+}
+
+
+/* ICONS */
+
+.icon-ace {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ace.png);
+}
+
+.icon-acid-blob {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/acid-blob.png);
+}
+
+.icon-acid-tube {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/acid-tube.png);
+}
+
+.icon-acid {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/acid.png);
+}
+
+.icon-acorn {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/acorn.png);
+}
+
+.icon-aerial-signal {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/aerial-signal.png);
+}
+
+.icon-aerosol {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/aerosol.png);
+}
+
+.icon-afterburn {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/afterburn.png);
+}
+
+.icon-alien-skull {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/alien-skull.png);
+}
+
+.icon-alien-stare {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/alien-stare.png);
+}
+
+.icon-all-for-one {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/all-for-one.png);
+}
+
+.icon-alligator-clip {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/alligator-clip.png);
+}
+
+.icon-ammo-box {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ammo-box.png);
+}
+
+.icon-ammonite-fossil {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ammonite-fossil.png);
+}
+
+.icon-ammonite {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ammonite.png);
+}
+
+.icon-amphora {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/amphora.png);
+}
+
+.icon-anatomy {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/anatomy.png);
+}
+
+.icon-anchor {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/anchor.png);
+}
+
+.icon-andromeda-chain {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/andromeda-chain.png);
+}
+
+.icon-angel-outfit {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/angel-outfit.png);
+}
+
+.icon-angel-wings {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/angel-wings.png);
+}
+
+.icon-angler-fish {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/angler-fish.png);
+}
+
+.icon-angular-spider {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/angular-spider.png);
+}
+
+.icon-animal-hide {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/animal-hide.png);
+}
+
+.icon-animal-skull {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/animal-skull.png);
+}
+
+.icon-ankh {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ankh.png);
+}
+
+.icon-anthem {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/anthem.png);
+}
+
+.icon-anvil-impact {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/anvil-impact.png);
+}
+
+.icon-anvil {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/anvil.png);
+}
+
+.icon-apple-maggot {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/apple-maggot.png);
+}
+
+.icon-apple-seeds {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/apple-seeds.png);
+}
+
+.icon-aquarius {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/aquarius.png);
+}
+
+.icon-archery-target {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/archery-target.png);
+}
+
+.icon-architect-mask {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/architect-mask.png);
+}
+
+.icon-arcing-bolt {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/arcing-bolt.png);
+}
+
+.icon-arena {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/arena.png);
+}
+
+.icon-aries {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/aries.png);
+}
+
+.icon-armadillo-tail {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/armadillo-tail.png);
+}
+
+.icon-armoured-shell {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/armoured-shell.png);
+}
+
+.icon-arrow-cluster {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/arrow-cluster.png);
+}
+
+.icon-arrow-flights {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/arrow-flights.png);
+}
+
+.icon-arrowed {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/arrowed.png);
+}
+
+.icon-arrowhead {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/arrowhead.png);
+}
+
+.icon-arrows-shield {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/arrows-shield.png);
+}
+
+.icon-arson {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/arson.png);
+}
+
+.icon-artificial-hive {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/artificial-hive.png);
+}
+
+.icon-at-sea {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/at-sea.png);
+}
+
+.icon-atomic-slashes {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/atomic-slashes.png);
+}
+
+.icon-aubergine {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/aubergine.png);
+}
+
+.icon-aura {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/aura.png);
+}
+
+.icon-auto-repair {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/auto-repair.png);
+}
+
+.icon-autogun {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/autogun.png);
+}
+
+.icon-awareness {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/awareness.png);
+}
+
+.icon-axe-in-stump {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/axe-in-stump.png);
+}
+
+.icon-axe-swing {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/axe-swing.png);
+}
+
+.icon-back-forth {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/back-forth.png);
+}
+
+.icon-back-pain {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/back-pain.png);
+}
+
+.icon-backstab {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/backstab.png);
+}
+
+.icon-backup {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/backup.png);
+}
+
+.icon-balloons {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/balloons.png);
+}
+
+.icon-bandage-roll {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bandage-roll.png);
+}
+
+.icon-bandaged {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bandaged.png);
+}
+
+.icon-barbed-arrow {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/barbed-arrow.png);
+}
+
+.icon-barbed-spear {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/barbed-spear.png);
+}
+
+.icon-barbed-wire {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/barbed-wire.png);
+}
+
+.icon-barbute {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/barbute.png);
+}
+
+.icon-barefoot {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/barefoot.png);
+}
+
+.icon-bat-blade {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bat-blade.png);
+}
+
+.icon-bat-wing {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bat-wing.png);
+}
+
+.icon-battered-axe {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/battered-axe.png);
+}
+
+.icon-batteries {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/batteries.png);
+}
+
+.icon-battery-0 {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/battery-0.png);
+}
+
+.icon-battery-100 {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/battery-100.png);
+}
+
+.icon-battery-25 {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/battery-25.png);
+}
+
+.icon-battery-50 {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/battery-50.png);
+}
+
+.icon-battery-75 {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/battery-75.png);
+}
+
+.icon-battery-minus {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/battery-minus.png);
+}
+
+.icon-battery-pack-alt {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/battery-pack-alt.png);
+}
+
+.icon-battery-pack {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/battery-pack.png);
+}
+
+.icon-battery-plus {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/battery-plus.png);
+}
+
+.icon-battle-axe {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/battle-axe.png);
+}
+
+.icon-battle-gear {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/battle-gear.png);
+}
+
+.icon-batwing-emblem {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/batwing-emblem.png);
+}
+
+.icon-beam-wake {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/beam-wake.png);
+}
+
+.icon-beams-aura {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/beams-aura.png);
+}
+
+.icon-beanstalk {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/beanstalk.png);
+}
+
+.icon-beard {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/beard.png);
+}
+
+.icon-beast-eye {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/beast-eye.png);
+}
+
+.icon-bee {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bee.png);
+}
+
+.icon-beech {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/beech.png);
+}
+
+.icon-beer-stein {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/beer-stein.png);
+}
+
+.icon-beetle-shell {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/beetle-shell.png);
+}
+
+.icon-behold {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/behold.png);
+}
+
+.icon-belt-buckles {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/belt-buckles.png);
+}
+
+.icon-bestial-fangs {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bestial-fangs.png);
+}
+
+.icon-beveled-star {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/beveled-star.png);
+}
+
+.icon-big-egg {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/big-egg.png);
+}
+
+.icon-big-wave {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/big-wave.png);
+}
+
+.icon-biohazard {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/biohazard.png);
+}
+
+.icon-bird-claw {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bird-claw.png);
+}
+
+.icon-bird-limb {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bird-limb.png);
+}
+
+.icon-bird-mask {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bird-mask.png);
+}
+
+.icon-bird-twitter {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bird-twitter.png);
+}
+
+.icon-black-bar {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/black-bar.png);
+}
+
+.icon-black-book {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/black-book.png);
+}
+
+.icon-black-cat {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/black-cat.png);
+}
+
+.icon-black-flag {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/black-flag.png);
+}
+
+.icon-black-hole-bolas {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/black-hole-bolas.png);
+}
+
+.icon-blackball {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/blackball.png);
+}
+
+.icon-blackcurrant {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/blackcurrant.png);
+}
+
+.icon-blade-bite {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/blade-bite.png);
+}
+
+.icon-blade-fall {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/blade-fall.png);
+}
+
+.icon-blast {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/blast.png);
+}
+
+.icon-blaster {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/blaster.png);
+}
+
+.icon-bleeding-eye {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bleeding-eye.png);
+}
+
+.icon-bleeding-heart {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bleeding-heart.png);
+}
+
+.icon-bloody-stash {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bloody-stash.png);
+}
+
+.icon-blunderbuss {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/blunderbuss.png);
+}
+
+.icon-boar-tusks {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/boar-tusks.png);
+}
+
+.icon-boiling-bubbles {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/boiling-bubbles.png);
+}
+
+.icon-bolas {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bolas.png);
+}
+
+.icon-bolt-shield {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bolt-shield.png);
+}
+
+.icon-bolter-gun {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bolter-gun.png);
+}
+
+.icon-bombing-run {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bombing-run.png);
+}
+
+.icon-bone-gnawer {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bone-gnawer.png);
+}
+
+.icon-bone-knife {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bone-knife.png);
+}
+
+.icon-book-aura {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/book-aura.png);
+}
+
+.icon-book-cover {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/book-cover.png);
+}
+
+.icon-book-storm {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/book-storm.png);
+}
+
+.icon-bookmark {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bookmark.png);
+}
+
+.icon-bookmarklet {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bookmarklet.png);
+}
+
+.icon-boomerang {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/boomerang.png);
+}
+
+.icon-boot-prints {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/boot-prints.png);
+}
+
+.icon-boot-stomp {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/boot-stomp.png);
+}
+
+.icon-boots {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/boots.png);
+}
+
+.icon-bordered-shield {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bordered-shield.png);
+}
+
+.icon-bottle-vapors {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bottle-vapors.png);
+}
+
+.icon-bottled-bolt {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bottled-bolt.png);
+}
+
+.icon-bottom-right-3d-arrow {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bottom-right-3d-arrow.png);
+}
+
+.icon-bowie-knife {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bowie-knife.png);
+}
+
+.icon-bowl-spiral {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bowl-spiral.png);
+}
+
+.icon-bowling-pin {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bowling-pin.png);
+}
+
+.icon-bowling-propulsion {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bowling-propulsion.png);
+}
+
+.icon-bowman {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bowman.png);
+}
+
+.icon-boxing-glove-surprise {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/boxing-glove-surprise.png);
+}
+
+.icon-boxing-glove {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/boxing-glove.png);
+}
+
+.icon-brain-freeze {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/brain-freeze.png);
+}
+
+.icon-brain-stem {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/brain-stem.png);
+}
+
+.icon-brain {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/brain.png);
+}
+
+.icon-brainstorm {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/brainstorm.png);
+}
+
+.icon-branch-arrow {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/branch-arrow.png);
+}
+
+.icon-brandy-bottle {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/brandy-bottle.png);
+}
+
+.icon-brass-eye {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/brass-eye.png);
+}
+
+.icon-breastplate {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/breastplate.png);
+}
+
+.icon-brick-pile {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/brick-pile.png);
+}
+
+.icon-bridge {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bridge.png);
+}
+
+.icon-broadhead-arrow {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/broadhead-arrow.png);
+}
+
+.icon-broadsword {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/broadsword.png);
+}
+
+.icon-broken-bone {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/broken-bone.png);
+}
+
+.icon-broken-bottle {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/broken-bottle.png);
+}
+
+.icon-broken-heart {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/broken-heart.png);
+}
+
+.icon-broken-shield {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/broken-shield.png);
+}
+
+.icon-broken-skull {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/broken-skull.png);
+}
+
+.icon-broken-tablet {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/broken-tablet.png);
+}
+
+.icon-brutal-helm {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/brutal-helm.png);
+}
+
+.icon-bubble-field {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bubble-field.png);
+}
+
+.icon-bubbling-flask {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bubbling-flask.png);
+}
+
+.icon-bud {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bud.png);
+}
+
+.icon-bugle-call {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bugle-call.png);
+}
+
+.icon-bulb {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bulb.png);
+}
+
+.icon-bull-horns {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bull-horns.png);
+}
+
+.icon-bull {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bull.png);
+}
+
+.icon-bullets {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/bullets.png);
+}
+
+.icon-burn {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/burn.png);
+}
+
+.icon-burning-book {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/burning-book.png);
+}
+
+.icon-burning-dot {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/burning-dot.png);
+}
+
+.icon-burning-embers {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/burning-embers.png);
+}
+
+.icon-burning-eye {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/burning-eye.png);
+}
+
+.icon-burning-meteor {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/burning-meteor.png);
+}
+
+.icon-burning-passion {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/burning-passion.png);
+}
+
+.icon-burning-round-shot {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/burning-round-shot.png);
+}
+
+.icon-burning-tree {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/burning-tree.png);
+}
+
+.icon-burst-blob {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/burst-blob.png);
+}
+
+.icon-butterfly-warning {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/butterfly-warning.png);
+}
+
+.icon-butterfly {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/butterfly.png);
+}
+
+.icon-caged-ball {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/caged-ball.png);
+}
+
+.icon-cake-slice {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cake-slice.png);
+}
+
+.icon-caldera {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/caldera.png);
+}
+
+.icon-campfire {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/campfire.png);
+}
+
+.icon-cancel {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cancel.png);
+}
+
+.icon-cancer {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cancer.png);
+}
+
+.icon-candle-flame {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/candle-flame.png);
+}
+
+.icon-candle-holder {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/candle-holder.png);
+}
+
+.icon-candle-light {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/candle-light.png);
+}
+
+.icon-candle-skull {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/candle-skull.png);
+}
+
+.icon-candlebright {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/candlebright.png);
+}
+
+.icon-cannister {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cannister.png);
+}
+
+.icon-cannon-ball {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cannon-ball.png);
+}
+
+.icon-cannon-shot {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cannon-shot.png);
+}
+
+.icon-cannon {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cannon.png);
+}
+
+.icon-capitol {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/capitol.png);
+}
+
+.icon-capricorn {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/capricorn.png);
+}
+
+.icon-cargo-crane {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cargo-crane.png);
+}
+
+.icon-carillon {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/carillon.png);
+}
+
+.icon-carrion {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/carrion.png);
+}
+
+.icon-carrot {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/carrot.png);
+}
+
+.icon-cartwheel {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cartwheel.png);
+}
+
+.icon-cash {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cash.png);
+}
+
+.icon-castle {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/castle.png);
+}
+
+.icon-cauldron {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cauldron.png);
+}
+
+.icon-cctv-camera {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cctv-camera.png);
+}
+
+.icon-centipede {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/centipede.png);
+}
+
+.icon-chain-lightning {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/chain-lightning.png);
+}
+
+.icon-chain-mail {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/chain-mail.png);
+}
+
+.icon-chained-heart {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/chained-heart.png);
+}
+
+.icon-chaingun {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/chaingun.png);
+}
+
+.icon-chalice-drops {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/chalice-drops.png);
+}
+
+.icon-charm {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/charm.png);
+}
+
+.icon-checkbox-tree {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/checkbox-tree.png);
+}
+
+.icon-checked-shield {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/checked-shield.png);
+}
+
+.icon-cheerful {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cheerful.png);
+}
+
+.icon-cheese-wedge {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cheese-wedge.png);
+}
+
+.icon-chemical-arrow {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/chemical-arrow.png);
+}
+
+.icon-chemical-bolt {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/chemical-bolt.png);
+}
+
+.icon-chemical-drop {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/chemical-drop.png);
+}
+
+.icon-chemical-tank {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/chemical-tank.png);
+}
+
+.icon-chicken-leg {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/chicken-leg.png);
+}
+
+.icon-circuitry {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/circuitry.png);
+}
+
+.icon-circular-saw {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/circular-saw.png);
+}
+
+.icon-circular-sawblade {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/circular-sawblade.png);
+}
+
+.icon-claw-hammer {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/claw-hammer.png);
+}
+
+.icon-claw {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/claw.png);
+}
+
+.icon-cloak-dagger {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cloak-dagger.png);
+}
+
+.icon-clockwork {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/clockwork.png);
+}
+
+.icon-clout {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/clout.png);
+}
+
+.icon-clover-spiked {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/clover-spiked.png);
+}
+
+.icon-clover {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/clover.png);
+}
+
+.icon-cluster-bomb {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cluster-bomb.png);
+}
+
+.icon-cobweb {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cobweb.png);
+}
+
+.icon-coffee-mug {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/coffee-mug.png);
+}
+
+.icon-coffin {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/coffin.png);
+}
+
+.icon-cog-lock {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cog-lock.png);
+}
+
+.icon-cog {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cog.png);
+}
+
+.icon-cogsplosion {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cogsplosion.png);
+}
+
+.icon-coiling-curl {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/coiling-curl.png);
+}
+
+.icon-cold-heart {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cold-heart.png);
+}
+
+.icon-coma {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/coma.png);
+}
+
+.icon-comb {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/comb.png);
+}
+
+.icon-compass {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/compass.png);
+}
+
+.icon-concentration-orb {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/concentration-orb.png);
+}
+
+.icon-condor-emblem {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/condor-emblem.png);
+}
+
+.icon-condylura-skull {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/condylura-skull.png);
+}
+
+.icon-conversation {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/conversation.png);
+}
+
+.icon-cool-spices {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cool-spices.png);
+}
+
+.icon-corked-tube {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/corked-tube.png);
+}
+
+.icon-cowled {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cowled.png);
+}
+
+.icon-crab-claw {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crab-claw.png);
+}
+
+.icon-crab {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crab.png);
+}
+
+.icon-cracked-ball-dunk {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cracked-ball-dunk.png);
+}
+
+.icon-cracked-disc {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cracked-disc.png);
+}
+
+.icon-cracked-glass {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cracked-glass.png);
+}
+
+.icon-cracked-helm {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cracked-helm.png);
+}
+
+.icon-cracked-mask {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cracked-mask.png);
+}
+
+.icon-cracked-saber {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cracked-saber.png);
+}
+
+.icon-cracked-shield {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cracked-shield.png);
+}
+
+.icon-crags {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crags.png);
+}
+
+.icon-crawl {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crawl.png);
+}
+
+.icon-crenulated-shield {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crenulated-shield.png);
+}
+
+.icon-crescent-blade {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crescent-blade.png);
+}
+
+.icon-crested-helmet {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crested-helmet.png);
+}
+
+.icon-croc-jaws {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/croc-jaws.png);
+}
+
+.icon-croc-sword {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/croc-sword.png);
+}
+
+.icon-crossbow {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crossbow.png);
+}
+
+.icon-crossed-air-flows {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crossed-air-flows.png);
+}
+
+.icon-crossed-axes {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crossed-axes.png);
+}
+
+.icon-crossed-bones {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crossed-bones.png);
+}
+
+.icon-crossed-chains {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crossed-chains.png);
+}
+
+.icon-crossed-claws {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crossed-claws.png);
+}
+
+.icon-crossed-pistols {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crossed-pistols.png);
+}
+
+.icon-crossed-sabres {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crossed-sabres.png);
+}
+
+.icon-crossed-slashes {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crossed-slashes.png);
+}
+
+.icon-crossed-swords {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crossed-swords.png);
+}
+
+.icon-crow-dive {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crow-dive.png);
+}
+
+.icon-crown-coin {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crown-coin.png);
+}
+
+.icon-crown-of-thorns {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crown-of-thorns.png);
+}
+
+.icon-crown {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crown.png);
+}
+
+.icon-crowned-explosion {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crowned-explosion.png);
+}
+
+.icon-crowned-heart {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crowned-heart.png);
+}
+
+.icon-crowned-skull {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crowned-skull.png);
+}
+
+.icon-crush {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crush.png);
+}
+
+.icon-crystal-ball {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crystal-ball.png);
+}
+
+.icon-crystal-bars {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crystal-bars.png);
+}
+
+.icon-crystal-cluster {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crystal-cluster.png);
+}
+
+.icon-crystal-eye {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crystal-eye.png);
+}
+
+.icon-crystal-growth {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crystal-growth.png);
+}
+
+.icon-crystal-shine {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crystal-shine.png);
+}
+
+.icon-crystal-wand {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crystal-wand.png);
+}
+
+.icon-crystalize {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/crystalize.png);
+}
+
+.icon-cubeforce {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cubeforce.png);
+}
+
+.icon-cubes {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cubes.png);
+}
+
+.icon-cupidon-arrow {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cupidon-arrow.png);
+}
+
+.icon-curled-leaf {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/curled-leaf.png);
+}
+
+.icon-curled-tentacle {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/curled-tentacle.png);
+}
+
+.icon-curling-vines {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/curling-vines.png);
+}
+
+.icon-curly-wing {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/curly-wing.png);
+}
+
+.icon-curvy-knife {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/curvy-knife.png);
+}
+
+.icon-cut-diamond {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cut-diamond.png);
+}
+
+.icon-cut-palm {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cut-palm.png);
+}
+
+.icon-cycle {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cycle.png);
+}
+
+.icon-cyclops {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/cyclops.png);
+}
+
+.icon-daggers {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/daggers.png);
+}
+
+.icon-daisy {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/daisy.png);
+}
+
+.icon-dark-squad {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dark-squad.png);
+}
+
+.icon-dead-eye {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dead-eye.png);
+}
+
+.icon-dead-head {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dead-head.png);
+}
+
+.icon-dead-wood {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dead-wood.png);
+}
+
+.icon-death-note {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/death-note.png);
+}
+
+.icon-death-skull {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/death-skull.png);
+}
+
+.icon-death-zone {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/death-zone.png);
+}
+
+.icon-deathcab {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/deathcab.png);
+}
+
+.icon-decapitation {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/decapitation.png);
+}
+
+.icon-defibrilate {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/defibrilate.png);
+}
+
+.icon-demolish {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/demolish.png);
+}
+
+.icon-dervish-swords {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dervish-swords.png);
+}
+
+.icon-desert-skull {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/desert-skull.png);
+}
+
+.icon-desk-lamp {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/desk-lamp.png);
+}
+
+.icon-despair {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/despair.png);
+}
+
+.icon-diablo-skull {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/diablo-skull.png);
+}
+
+.icon-diamond-hard {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/diamond-hard.png);
+}
+
+.icon-dice-six-faces-five {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dice-six-faces-five.png);
+}
+
+.icon-dice-six-faces-four {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dice-six-faces-four.png);
+}
+
+.icon-dice-six-faces-one {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dice-six-faces-one.png);
+}
+
+.icon-dice-six-faces-six {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dice-six-faces-six.png);
+}
+
+.icon-dice-six-faces-three {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dice-six-faces-three.png);
+}
+
+.icon-dice-six-faces-two {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dice-six-faces-two.png);
+}
+
+.icon-dig-dug {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dig-dug.png);
+}
+
+.icon-dinosaur-bones {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dinosaur-bones.png);
+}
+
+.icon-dinosaur-egg {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dinosaur-egg.png);
+}
+
+.icon-dinosaur-rex {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dinosaur-rex.png);
+}
+
+.icon-disintegrate {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/disintegrate.png);
+}
+
+.icon-distraction {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/distraction.png);
+}
+
+.icon-divergence {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/divergence.png);
+}
+
+.icon-divert {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/divert.png);
+}
+
+.icon-diving-dagger {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/diving-dagger.png);
+}
+
+.icon-dna1 {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dna1.png);
+}
+
+.icon-dna2 {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dna2.png);
+}
+
+.icon-doctor-face {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/doctor-face.png);
+}
+
+.icon-dodge {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dodge.png);
+}
+
+.icon-dodging {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dodging.png);
+}
+
+.icon-domino-mask {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/domino-mask.png);
+}
+
+.icon-double-dragon {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/double-dragon.png);
+}
+
+.icon-double-quaver {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/double-quaver.png);
+}
+
+.icon-double-shot {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/double-shot.png);
+}
+
+.icon-doubled {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/doubled.png);
+}
+
+.icon-dove {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dove.png);
+}
+
+.icon-dozen {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dozen.png);
+}
+
+.icon-dragon-balls {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dragon-balls.png);
+}
+
+.icon-dragon-breath {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dragon-breath.png);
+}
+
+.icon-dragon-head {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dragon-head.png);
+}
+
+.icon-dragon-spiral {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dragon-spiral.png);
+}
+
+.icon-dragonfly {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dragonfly.png);
+}
+
+.icon-drama-masks {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/drama-masks.png);
+}
+
+.icon-drill {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/drill.png);
+}
+
+.icon-drink-me {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/drink-me.png);
+}
+
+.icon-dripping-blade {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dripping-blade.png);
+}
+
+.icon-dripping-goo {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dripping-goo.png);
+}
+
+.icon-dripping-honey {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dripping-honey.png);
+}
+
+.icon-dripping-knife {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dripping-knife.png);
+}
+
+.icon-dripping-stone {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dripping-stone.png);
+}
+
+.icon-dripping-sword {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/dripping-sword.png);
+}
+
+.icon-drop {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/drop.png);
+}
+
+.icon-droplet-splash {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/droplet-splash.png);
+}
+
+.icon-droplets {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/droplets.png);
+}
+
+.icon-drowning {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/drowning.png);
+}
+
+.icon-duality {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/duality.png);
+}
+
+.icon-duel {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/duel.png);
+}
+
+.icon-eagle-emblem {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/eagle-emblem.png);
+}
+
+.icon-earth-crack {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/earth-crack.png);
+}
+
+.icon-earth-spit {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/earth-spit.png);
+}
+
+.icon-eclipse {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/eclipse.png);
+}
+
+.icon-edge-crack {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/edge-crack.png);
+}
+
+.icon-edged-shield {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/edged-shield.png);
+}
+
+.icon-egg-clutch {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/egg-clutch.png);
+}
+
+.icon-egg-pod {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/egg-pod.png);
+}
+
+.icon-egyptian-pyramids {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/egyptian-pyramids.png);
+}
+
+.icon-elderberry {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/elderberry.png);
+}
+
+.icon-electric-whip {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/electric-whip.png);
+}
+
+.icon-electric {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/electric.png);
+}
+
+.icon-elf-ear {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/elf-ear.png);
+}
+
+.icon-ember-shot {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ember-shot.png);
+}
+
+.icon-embrassed-energy {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/embrassed-energy.png);
+}
+
+.icon-embryo {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/embryo.png);
+}
+
+.icon-emerald {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/emerald.png);
+}
+
+.icon-empty-chessboard {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/empty-chessboard.png);
+}
+
+.icon-empty-hourglass {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/empty-hourglass.png);
+}
+
+.icon-energise {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/energise.png);
+}
+
+.icon-energy-arrow {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/energy-arrow.png);
+}
+
+.icon-energy-shield {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/energy-shield.png);
+}
+
+.icon-energy-sword {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/energy-sword.png);
+}
+
+.icon-engagement-ring {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/engagement-ring.png);
+}
+
+.icon-ent-mouth {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ent-mouth.png);
+}
+
+.icon-envelope {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/envelope.png);
+}
+
+.icon-erlenmeyer {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/erlenmeyer.png);
+}
+
+.icon-eruption {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/eruption.png);
+}
+
+.icon-eskimo {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/eskimo.png);
+}
+
+.icon-evil-book {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/evil-book.png);
+}
+
+.icon-evil-fork {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/evil-fork.png);
+}
+
+.icon-evil-moon {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/evil-moon.png);
+}
+
+.icon-evil-tree {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/evil-tree.png);
+}
+
+.icon-evil-wings {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/evil-wings.png);
+}
+
+.icon-expander {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/expander.png);
+}
+
+.icon-explosive-materials {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/explosive-materials.png);
+}
+
+.icon-extra-lucid {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/extra-lucid.png);
+}
+
+.icon-eye-shield {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/eye-shield.png);
+}
+
+.icon-eyeball {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/eyeball.png);
+}
+
+.icon-eyedropper {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/eyedropper.png);
+}
+
+.icon-eyestalk {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/eyestalk.png);
+}
+
+.icon-fairy-wand {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fairy-wand.png);
+}
+
+.icon-fairy {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fairy.png);
+}
+
+.icon-fall-down {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fall-down.png);
+}
+
+.icon-falling-eye {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/falling-eye.png);
+}
+
+.icon-falling-leaf {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/falling-leaf.png);
+}
+
+.icon-falling-ovoid {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/falling-ovoid.png);
+}
+
+.icon-falling {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/falling.png);
+}
+
+.icon-fanged-skull {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fanged-skull.png);
+}
+
+.icon-feather {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/feather.png);
+}
+
+.icon-feathered-wing {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/feathered-wing.png);
+}
+
+.icon-fedora {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fedora.png);
+}
+
+.icon-female {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/female.png);
+}
+
+.icon-fez {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fez.png);
+}
+
+.icon-field {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/field.png);
+}
+
+.icon-filelist.txt {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/filelist.txt.png);
+}
+
+.icon-fire-ace {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fire-ace.png);
+}
+
+.icon-fire-axe {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fire-axe.png);
+}
+
+.icon-fire-bomb {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fire-bomb.png);
+}
+
+.icon-fire-bottle {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fire-bottle.png);
+}
+
+.icon-fire-bowl {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fire-bowl.png);
+}
+
+.icon-fire-breath {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fire-breath.png);
+}
+
+.icon-fire-punch {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fire-punch.png);
+}
+
+.icon-fire-ring {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fire-ring.png);
+}
+
+.icon-fire-shield {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fire-shield.png);
+}
+
+.icon-fire-wave {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fire-wave.png);
+}
+
+.icon-fire {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fire.png);
+}
+
+.icon-fireball {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fireball.png);
+}
+
+.icon-fireflake {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fireflake.png);
+}
+
+.icon-firework-rocket {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/firework-rocket.png);
+}
+
+.icon-first-aid {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/first-aid.png);
+}
+
+.icon-fish-corpse {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fish-corpse.png);
+}
+
+.icon-fishbone {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fishbone.png);
+}
+
+.icon-fishing-hook {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fishing-hook.png);
+}
+
+.icon-fishing-net {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fishing-net.png);
+}
+
+.icon-fist {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fist.png);
+}
+
+.icon-fizzing-flask {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fizzing-flask.png);
+}
+
+.icon-flake {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/flake.png);
+}
+
+.icon-flame-spin {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/flame-spin.png);
+}
+
+.icon-flame-tunnel {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/flame-tunnel.png);
+}
+
+.icon-flame {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/flame.png);
+}
+
+.icon-flamer {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/flamer.png);
+}
+
+.icon-flaming-arrow {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/flaming-arrow.png);
+}
+
+.icon-flaming-claw {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/flaming-claw.png);
+}
+
+.icon-flaming-trident {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/flaming-trident.png);
+}
+
+.icon-flash-grenade {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/flash-grenade.png);
+}
+
+.icon-flat-hammer {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/flat-hammer.png);
+}
+
+.icon-fleshy-mass {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fleshy-mass.png);
+}
+
+.icon-flexible-star {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/flexible-star.png);
+}
+
+.icon-floating-crystal {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/floating-crystal.png);
+}
+
+.icon-flower-pot {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/flower-pot.png);
+}
+
+.icon-flowers {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/flowers.png);
+}
+
+.icon-fluffy-cloud {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fluffy-cloud.png);
+}
+
+.icon-fluffy-swirl {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fluffy-swirl.png);
+}
+
+.icon-fluffy-wing {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fluffy-wing.png);
+}
+
+.icon-flying-dagger {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/flying-dagger.png);
+}
+
+.icon-flying-flag {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/flying-flag.png);
+}
+
+.icon-foam {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/foam.png);
+}
+
+.icon-focused-lightning {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/focused-lightning.png);
+}
+
+.icon-folded-paper {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/folded-paper.png);
+}
+
+.icon-food-chain {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/food-chain.png);
+}
+
+.icon-foot-trip {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/foot-trip.png);
+}
+
+.icon-footprint {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/footprint.png);
+}
+
+.icon-forward-field {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/forward-field.png);
+}
+
+.icon-fossil {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fossil.png);
+}
+
+.icon-fountain-pen {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fountain-pen.png);
+}
+
+.icon-fountain {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fountain.png);
+}
+
+.icon-fox-head {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fox-head.png);
+}
+
+.icon-fragrance {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fragrance.png);
+}
+
+.icon-frankenstein-creature {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/frankenstein-creature.png);
+}
+
+.icon-freedom-dove {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/freedom-dove.png);
+}
+
+.icon-frog {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/frog.png);
+}
+
+.icon-front-teeth {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/front-teeth.png);
+}
+
+.icon-frontal-lobe {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/frontal-lobe.png);
+}
+
+.icon-frostfire {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/frostfire.png);
+}
+
+.icon-frozen-arrow {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/frozen-arrow.png);
+}
+
+.icon-frozen-block {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/frozen-block.png);
+}
+
+.icon-frozen-orb {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/frozen-orb.png);
+}
+
+.icon-fruiting {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fruiting.png);
+}
+
+.icon-fulguro-punch {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/fulguro-punch.png);
+}
+
+.icon-galleon {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/galleon.png);
+}
+
+.icon-gamepad-cross {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/gamepad-cross.png);
+}
+
+.icon-gas-mask {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/gas-mask.png);
+}
+
+.icon-gavel {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/gavel.png);
+}
+
+.icon-gaze {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/gaze.png);
+}
+
+.icon-gear-hammer {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/gear-hammer.png);
+}
+
+.icon-gears {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/gears.png);
+}
+
+.icon-gecko {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/gecko.png);
+}
+
+.icon-gem-chain {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/gem-chain.png);
+}
+
+.icon-gem-necklace {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/gem-necklace.png);
+}
+
+.icon-gem-pendant {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/gem-pendant.png);
+}
+
+.icon-gemini {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/gemini.png);
+}
+
+.icon-gems {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/gems.png);
+}
+
+.icon-ghost {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ghost.png);
+}
+
+.icon-gibbet {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/gibbet.png);
+}
+
+.icon-gift-of-knowledge {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/gift-of-knowledge.png);
+}
+
+.icon-gift-trap {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/gift-trap.png);
+}
+
+.icon-glass-heart {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/glass-heart.png);
+}
+
+.icon-glass-shot {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/glass-shot.png);
+}
+
+.icon-globe {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/globe.png);
+}
+
+.icon-gloop {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/gloop.png);
+}
+
+.icon-glowing-hands {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/glowing-hands.png);
+}
+
+.icon-gluttonous-smile {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/gluttonous-smile.png);
+}
+
+.icon-gluttony {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/gluttony.png);
+}
+
+.icon-gold-bar {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/gold-bar.png);
+}
+
+.icon-gold-scarab {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/gold-scarab.png);
+}
+
+.icon-goo-explosion {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/goo-explosion.png);
+}
+
+.icon-goo-skull {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/goo-skull.png);
+}
+
+.icon-goo-spurt {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/goo-spurt.png);
+}
+
+.icon-gooey-daemon {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/gooey-daemon.png);
+}
+
+.icon-gooey-eyed-sun {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/gooey-eyed-sun.png);
+}
+
+.icon-gooey-impact {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/gooey-impact.png);
+}
+
+.icon-gooey-sword {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/gooey-sword.png);
+}
+
+.icon-grab {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/grab.png);
+}
+
+.icon-grapes {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/grapes.png);
+}
+
+.icon-grasping-claws {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/grasping-claws.png);
+}
+
+.icon-grass {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/grass.png);
+}
+
+.icon-grease-trap {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/grease-trap.png);
+}
+
+.icon-grenade {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/grenade.png);
+}
+
+.icon-grim-reaper {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/grim-reaper.png);
+}
+
+.icon-groundbreaker {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/groundbreaker.png);
+}
+
+.icon-guarded-tower {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/guarded-tower.png);
+}
+
+.icon-guillotine {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/guillotine.png);
+}
+
+.icon-guitar {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/guitar.png);
+}
+
+.icon-gunshot {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/gunshot.png);
+}
+
+.icon-halberd-shuriken {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/halberd-shuriken.png);
+}
+
+.icon-halberd {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/halberd.png);
+}
+
+.icon-half-heart {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/half-heart.png);
+}
+
+.icon-hammer-drop {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/hammer-drop.png);
+}
+
+.icon-hammer-nails {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/hammer-nails.png);
+}
+
+.icon-hand-of-god {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/hand-of-god.png);
+}
+
+.icon-hand-saw {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/hand-saw.png);
+}
+
+.icon-hand {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/hand.png);
+}
+
+.icon-handcuffs {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/handcuffs.png);
+}
+
+.icon-hanging-spider {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/hanging-spider.png);
+}
+
+.icon-harpoon-chain {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/harpoon-chain.png);
+}
+
+.icon-harpoon-trident {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/harpoon-trident.png);
+}
+
+.icon-harpy {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/harpy.png);
+}
+
+.icon-hatchets {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/hatchets.png);
+}
+
+.icon-haunting {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/haunting.png);
+}
+
+.icon-hazard-sign {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/hazard-sign.png);
+}
+
+.icon-head-shot {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/head-shot.png);
+}
+
+.icon-headshot {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/headshot.png);
+}
+
+.icon-health-decrease {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/health-decrease.png);
+}
+
+.icon-health-increase {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/health-increase.png);
+}
+
+.icon-health-normal {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/health-normal.png);
+}
+
+.icon-heart-bottle {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/heart-bottle.png);
+}
+
+.icon-heart-drop {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/heart-drop.png);
+}
+
+.icon-heart-inside {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/heart-inside.png);
+}
+
+.icon-heart-organ {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/heart-organ.png);
+}
+
+.icon-heart-tower {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/heart-tower.png);
+}
+
+.icon-heartburn {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/heartburn.png);
+}
+
+.icon-heat-haze {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/heat-haze.png);
+}
+
+.icon-heavy-arrow {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/heavy-arrow.png);
+}
+
+.icon-heavy-helm {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/heavy-helm.png);
+}
+
+.icon-heavy-rain {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/heavy-rain.png);
+}
+
+.icon-helmet {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/helmet.png);
+}
+
+.icon-help {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/help.png);
+}
+
+.icon-hidden {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/hidden.png);
+}
+
+.icon-high-grass {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/high-grass.png);
+}
+
+.icon-high-shot {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/high-shot.png);
+}
+
+.icon-hive {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/hive.png);
+}
+
+.icon-hole-ladder {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/hole-ladder.png);
+}
+
+.icon-holy-grail {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/holy-grail.png);
+}
+
+.icon-holy-symbol {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/holy-symbol.png);
+}
+
+.icon-honeycomb {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/honeycomb.png);
+}
+
+.icon-honeypot {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/honeypot.png);
+}
+
+.icon-hood {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/hood.png);
+}
+
+.icon-hoof {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/hoof.png);
+}
+
+.icon-horn-internal {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/horn-internal.png);
+}
+
+.icon-horned-helm {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/horned-helm.png);
+}
+
+.icon-horned-skull {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/horned-skull.png);
+}
+
+.icon-horse-head {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/horse-head.png);
+}
+
+.icon-horseshoe {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/horseshoe.png);
+}
+
+.icon-hospital-cross {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/hospital-cross.png);
+}
+
+.icon-hot-spices {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/hot-spices.png);
+}
+
+.icon-hot-surface {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/hot-surface.png);
+}
+
+.icon-hound {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/hound.png);
+}
+
+.icon-hourglass {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/hourglass.png);
+}
+
+.icon-human-ear {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/human-ear.png);
+}
+
+.icon-hunting-horn {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/hunting-horn.png);
+}
+
+.icon-hydra-shot {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/hydra-shot.png);
+}
+
+.icon-hydra {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/hydra.png);
+}
+
+.icon-hypersonic-bolt {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/hypersonic-bolt.png);
+}
+
+.icon-hypodermic-test {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/hypodermic-test.png);
+}
+
+.icon-ice-bolt {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ice-bolt.png);
+}
+
+.icon-ice-bomb {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ice-bomb.png);
+}
+
+.icon-ice-cube {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ice-cube.png);
+}
+
+.icon-ice-shield {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ice-shield.png);
+}
+
+.icon-ice-spear {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ice-spear.png);
+}
+
+.icon-icebergs {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/icebergs.png);
+}
+
+.icon-ifrit {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ifrit.png);
+}
+
+.icon-imbricated-arrows {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/imbricated-arrows.png);
+}
+
+.icon-imp-laugh {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/imp-laugh.png);
+}
+
+.icon-imp {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/imp.png);
+}
+
+.icon-impact-point {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/impact-point.png);
+}
+
+.icon-implosion {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/implosion.png);
+}
+
+.icon-imprisoned {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/imprisoned.png);
+}
+
+.icon-incense {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/incense.png);
+}
+
+.icon-incisors {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/incisors.png);
+}
+
+.icon-infested-mass {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/infested-mass.png);
+}
+
+.icon-ink-swirl {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ink-swirl.png);
+}
+
+.icon-inner-self {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/inner-self.png);
+}
+
+.icon-insect-jaws {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/insect-jaws.png);
+}
+
+.icon-interdiction {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/interdiction.png);
+}
+
+.icon-internal-injury {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/internal-injury.png);
+}
+
+.icon-internal-organ {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/internal-organ.png);
+}
+
+.icon-interstellar-path {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/interstellar-path.png);
+}
+
+.icon-invisible-face {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/invisible-face.png);
+}
+
+.icon-invisible {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/invisible.png);
+}
+
+.icon-iron-mask {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/iron-mask.png);
+}
+
+.icon-james-bond-aperture {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/james-bond-aperture.png);
+}
+
+.icon-jawbone {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/jawbone.png);
+}
+
+.icon-jellyfish {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/jellyfish.png);
+}
+
+.icon-jet-pack {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/jet-pack.png);
+}
+
+.icon-jetpack {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/jetpack.png);
+}
+
+.icon-jeweled-chalice {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/jeweled-chalice.png);
+}
+
+.icon-jigsaw-box {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/jigsaw-box.png);
+}
+
+.icon-jigsaw-piece {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/jigsaw-piece.png);
+}
+
+.icon-journey {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/journey.png);
+}
+
+.icon-juggler {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/juggler.png);
+}
+
+.icon-justice-star {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/justice-star.png);
+}
+
+.icon-kaleidoscope-pearls {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/kaleidoscope-pearls.png);
+}
+
+.icon-kevlar {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/kevlar.png);
+}
+
+.icon-key {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/key.png);
+}
+
+.icon-kindle {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/kindle.png);
+}
+
+.icon-king {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/king.png);
+}
+
+.icon-kitchen-knives {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/kitchen-knives.png);
+}
+
+.icon-knapsack {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/knapsack.png);
+}
+
+.icon-knife-fork {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/knife-fork.png);
+}
+
+.icon-knife-thrust {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/knife-thrust.png);
+}
+
+.icon-lamellar {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/lamellar.png);
+}
+
+.icon-lamprey-mouth {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/lamprey-mouth.png);
+}
+
+.icon-land-mine {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/land-mine.png);
+}
+
+.icon-lantern-flame {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/lantern-flame.png);
+}
+
+.icon-lantern {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/lantern.png);
+}
+
+.icon-laser-blast {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/laser-blast.png);
+}
+
+.icon-laser-gun {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/laser-gun.png);
+}
+
+.icon-laser-sparks {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/laser-sparks.png);
+}
+
+.icon-laser-warning {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/laser-warning.png);
+}
+
+.icon-laserburn {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/laserburn.png);
+}
+
+.icon-lasso {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/lasso.png);
+}
+
+.icon-laurel-crown {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/laurel-crown.png);
+}
+
+.icon-laurels {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/laurels.png);
+}
+
+.icon-lava {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/lava.png);
+}
+
+.icon-law-star {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/law-star.png);
+}
+
+.icon-layered-armor {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/layered-armor.png);
+}
+
+.icon-leaf-skeleton {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/leaf-skeleton.png);
+}
+
+.icon-leaf-swirl {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/leaf-swirl.png);
+}
+
+.icon-leaky-skull {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/leaky-skull.png);
+}
+
+.icon-leather-boot {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/leather-boot.png);
+}
+
+.icon-leather-vest {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/leather-vest.png);
+}
+
+.icon-leeching-worm {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/leeching-worm.png);
+}
+
+.icon-leo {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/leo.png);
+}
+
+.icon-letter-bomb {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/letter-bomb.png);
+}
+
+.icon-level-four-advanced {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/level-four-advanced.png);
+}
+
+.icon-level-four {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/level-four.png);
+}
+
+.icon-level-three-advanced {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/level-three-advanced.png);
+}
+
+.icon-level-three {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/level-three.png);
+}
+
+.icon-level-two-advanced {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/level-two-advanced.png);
+}
+
+.icon-level-two {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/level-two.png);
+}
+
+.icon-lever {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/lever.png);
+}
+
+.icon-libra {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/libra.png);
+}
+
+.icon-life-in-the-balance {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/life-in-the-balance.png);
+}
+
+.icon-life-support {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/life-support.png);
+}
+
+.icon-life-tap {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/life-tap.png);
+}
+
+.icon-lift {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/lift.png);
+}
+
+.icon-light-bulb {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/light-bulb.png);
+}
+
+.icon-lightning-arc {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/lightning-arc.png);
+}
+
+.icon-lightning-bow {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/lightning-bow.png);
+}
+
+.icon-lightning-branches {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/lightning-branches.png);
+}
+
+.icon-lightning-frequency {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/lightning-frequency.png);
+}
+
+.icon-lightning-helix {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/lightning-helix.png);
+}
+
+.icon-lightning-shield {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/lightning-shield.png);
+}
+
+.icon-lightning-shout {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/lightning-shout.png);
+}
+
+.icon-lightning-storm {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/lightning-storm.png);
+}
+
+.icon-lightning-tear {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/lightning-tear.png);
+}
+
+.icon-linked-rings {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/linked-rings.png);
+}
+
+.icon-lion {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/lion.png);
+}
+
+.icon-lips {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/lips.png);
+}
+
+.icon-list-files.bat {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/list-files.bat.png);
+}
+
+.icon-lit-candelabra {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/lit-candelabra.png);
+}
+
+.icon-lizard-tongue {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/lizard-tongue.png);
+}
+
+.icon-lizardman {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/lizardman.png);
+}
+
+.icon-lob-arrow {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/lob-arrow.png);
+}
+
+.icon-locked-chest {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/locked-chest.png);
+}
+
+.icon-locked-fortress {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/locked-fortress.png);
+}
+
+.icon-lotus-flower {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/lotus-flower.png);
+}
+
+.icon-lotus {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/lotus.png);
+}
+
+.icon-love-howl {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/love-howl.png);
+}
+
+.icon-love-song {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/love-song.png);
+}
+
+.icon-lucifer-cannon {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/lucifer-cannon.png);
+}
+
+.icon-lyre {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/lyre.png);
+}
+
+.icon-mace-head {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/mace-head.png);
+}
+
+.icon-machete {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/machete.png);
+}
+
+.icon-mad-scientist {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/mad-scientist.png);
+}
+
+.icon-maggot {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/maggot.png);
+}
+
+.icon-magic-gate {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/magic-gate.png);
+}
+
+.icon-magic-lamp {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/magic-lamp.png);
+}
+
+.icon-magic-palm {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/magic-palm.png);
+}
+
+.icon-magic-portal {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/magic-portal.png);
+}
+
+.icon-magic-shield {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/magic-shield.png);
+}
+
+.icon-magic-swirl {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/magic-swirl.png);
+}
+
+.icon-magnet-blast {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/magnet-blast.png);
+}
+
+.icon-magnet {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/magnet.png);
+}
+
+.icon-magnifying-glass {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/magnifying-glass.png);
+}
+
+.icon-mail-shirt {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/mail-shirt.png);
+}
+
+.icon-mailed-fist {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/mailed-fist.png);
+}
+
+.icon-male {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/male.png);
+}
+
+.icon-manacles {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/manacles.png);
+}
+
+.icon-mantrap {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/mantrap.png);
+}
+
+.icon-maple-leaf {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/maple-leaf.png);
+}
+
+.icon-marrow-drain {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/marrow-drain.png);
+}
+
+.icon-martini {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/martini.png);
+}
+
+.icon-masked-spider {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/masked-spider.png);
+}
+
+.icon-mass-driver {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/mass-driver.png);
+}
+
+.icon-match-head {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/match-head.png);
+}
+
+.icon-materials-science {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/materials-science.png);
+}
+
+.icon-maze {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/maze.png);
+}
+
+.icon-meat-cleaver {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/meat-cleaver.png);
+}
+
+.icon-meat-hook {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/meat-hook.png);
+}
+
+.icon-meat {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/meat.png);
+}
+
+.icon-mechanical-arm {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/mechanical-arm.png);
+}
+
+.icon-medal-skull {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/medal-skull.png);
+}
+
+.icon-medal {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/medal.png);
+}
+
+.icon-medical-pack-alt {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/medical-pack-alt.png);
+}
+
+.icon-medical-pack {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/medical-pack.png);
+}
+
+.icon-meditation {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/meditation.png);
+}
+
+.icon-mesh-ball {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/mesh-ball.png);
+}
+
+.icon-metal-bar {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/metal-bar.png);
+}
+
+.icon-metal-disc {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/metal-disc.png);
+}
+
+.icon-metal-hand {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/metal-hand.png);
+}
+
+.icon-meteor-impact {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/meteor-impact.png);
+}
+
+.icon-microchip {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/microchip.png);
+}
+
+.icon-microscope-lens {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/microscope-lens.png);
+}
+
+.icon-mighty-boosh {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/mighty-boosh.png);
+}
+
+.icon-mine-wagon {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/mine-wagon.png);
+}
+
+.icon-mineral-heart {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/mineral-heart.png);
+}
+
+.icon-minigun {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/minigun.png);
+}
+
+.icon-mining {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/mining.png);
+}
+
+.icon-minions {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/minions.png);
+}
+
+.icon-minotaur {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/minotaur.png);
+}
+
+.icon-miracle-medecine {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/miracle-medecine.png);
+}
+
+.icon-mirror-mirror {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/mirror-mirror.png);
+}
+
+.icon-missile-mech {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/missile-mech.png);
+}
+
+.icon-missile-pod {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/missile-pod.png);
+}
+
+.icon-missile-swarm {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/missile-swarm.png);
+}
+
+.icon-mite-alt {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/mite-alt.png);
+}
+
+.icon-mite {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/mite.png);
+}
+
+.icon-mixed-swords {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/mixed-swords.png);
+}
+
+.icon-moebius-star {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/moebius-star.png);
+}
+
+.icon-moebius-triangle {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/moebius-triangle.png);
+}
+
+.icon-molecule {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/molecule.png);
+}
+
+.icon-molotov {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/molotov.png);
+}
+
+.icon-monkey {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/monkey.png);
+}
+
+.icon-moon {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/moon.png);
+}
+
+.icon-morbid-humour {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/morbid-humour.png);
+}
+
+.icon-mountain-cave {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/mountain-cave.png);
+}
+
+.icon-mountains {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/mountains.png);
+}
+
+.icon-mountaintop {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/mountaintop.png);
+}
+
+.icon-mouse {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/mouse.png);
+}
+
+.icon-mouth-watering {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/mouth-watering.png);
+}
+
+.icon-movement-sensor {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/movement-sensor.png);
+}
+
+.icon-mucous-pillar {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/mucous-pillar.png);
+}
+
+.icon-muscle-fat {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/muscle-fat.png);
+}
+
+.icon-muscle-up {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/muscle-up.png);
+}
+
+.icon-mushroom-cloud {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/mushroom-cloud.png);
+}
+
+.icon-mushroom-gills {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/mushroom-gills.png);
+}
+
+.icon-mushroom {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/mushroom.png);
+}
+
+.icon-nailed-foot {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/nailed-foot.png);
+}
+
+.icon-nailed-head {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/nailed-head.png);
+}
+
+.icon-nails {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/nails.png);
+}
+
+.icon-needle-drill {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/needle-drill.png);
+}
+
+.icon-needle-jaws {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/needle-jaws.png);
+}
+
+.icon-night-sky {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/night-sky.png);
+}
+
+.icon-ninja-mask {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ninja-mask.png);
+}
+
+.icon-nodular {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/nodular.png);
+}
+
+.icon-nothing-to-say {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/nothing-to-say.png);
+}
+
+.icon-nuclear {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/nuclear.png);
+}
+
+.icon-oak {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/oak.png);
+}
+
+.icon-ocarina {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ocarina.png);
+}
+
+.icon-octopus {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/octopus.png);
+}
+
+.icon-omega {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/omega.png);
+}
+
+.icon-on-target {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/on-target.png);
+}
+
+.icon-one-eyed {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/one-eyed.png);
+}
+
+.icon-open-book {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/open-book.png);
+}
+
+.icon-open-wound {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/open-wound.png);
+}
+
+.icon-ophiuchus {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ophiuchus.png);
+}
+
+.icon-oppression {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/oppression.png);
+}
+
+.icon-orb-direction {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/orb-direction.png);
+}
+
+.icon-orb-wand {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/orb-wand.png);
+}
+
+.icon-orbital {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/orbital.png);
+}
+
+.icon-ouroboros {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ouroboros.png);
+}
+
+.icon-over-infinity {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/over-infinity.png);
+}
+
+.icon-overdose {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/overdose.png);
+}
+
+.icon-overdrive {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/overdrive.png);
+}
+
+.icon-overhead {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/overhead.png);
+}
+
+.icon-overkill {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/overkill.png);
+}
+
+.icon-overmind {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/overmind.png);
+}
+
+.icon-owl {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/owl.png);
+}
+
+.icon-padlock {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/padlock.png);
+}
+
+.icon-palm-tree {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/palm-tree.png);
+}
+
+.icon-palm {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/palm.png);
+}
+
+.icon-paper-bomb {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/paper-bomb.png);
+}
+
+.icon-paper-lantern {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/paper-lantern.png);
+}
+
+.icon-paper {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/paper.png);
+}
+
+.icon-papers {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/papers.png);
+}
+
+.icon-parachute {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/parachute.png);
+}
+
+.icon-paranoia {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/paranoia.png);
+}
+
+.icon-parmecia {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/parmecia.png);
+}
+
+.icon-parrot-head {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/parrot-head.png);
+}
+
+.icon-paw-front {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/paw-front.png);
+}
+
+.icon-paw-heart {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/paw-heart.png);
+}
+
+.icon-paw {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/paw.png);
+}
+
+.icon-pawn {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/pawn.png);
+}
+
+.icon-pawprint {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/pawprint.png);
+}
+
+.icon-perfume-bottle {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/perfume-bottle.png);
+}
+
+.icon-perspective-dice-six-faces-five {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/perspective-dice-six-faces-five.png);
+}
+
+.icon-perspective-dice-six-faces-four {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/perspective-dice-six-faces-four.png);
+}
+
+.icon-perspective-dice-six-faces-one {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/perspective-dice-six-faces-one.png);
+}
+
+.icon-perspective-dice-six-faces-random {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/perspective-dice-six-faces-random.png);
+}
+
+.icon-perspective-dice-six-faces-six {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/perspective-dice-six-faces-six.png);
+}
+
+.icon-perspective-dice-six-faces-three {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/perspective-dice-six-faces-three.png);
+}
+
+.icon-perspective-dice-six-faces-two {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/perspective-dice-six-faces-two.png);
+}
+
+.icon-pie-slice {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/pie-slice.png);
+}
+
+.icon-pierced-body {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/pierced-body.png);
+}
+
+.icon-pierced-heart {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/pierced-heart.png);
+}
+
+.icon-pill-drop {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/pill-drop.png);
+}
+
+.icon-pill {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/pill.png);
+}
+
+.icon-pincers {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/pincers.png);
+}
+
+.icon-pine-tree {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/pine-tree.png);
+}
+
+.icon-ping-pong-bat {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ping-pong-bat.png);
+}
+
+.icon-pirate-grave {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/pirate-grave.png);
+}
+
+.icon-pirate-skull {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/pirate-skull.png);
+}
+
+.icon-pisces {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/pisces.png);
+}
+
+.icon-pistol-gun {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/pistol-gun.png);
+}
+
+.icon-pizza-cutter {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/pizza-cutter.png);
+}
+
+.icon-plain-dagger {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/plain-dagger.png);
+}
+
+.icon-planks {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/planks.png);
+}
+
+.icon-plasma-bolt {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/plasma-bolt.png);
+}
+
+.icon-plastron {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/plastron.png);
+}
+
+.icon-pocket-bow {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/pocket-bow.png);
+}
+
+.icon-podium {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/podium.png);
+}
+
+.icon-pointing {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/pointing.png);
+}
+
+.icon-pointy-hat {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/pointy-hat.png);
+}
+
+.icon-poison-bottle {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/poison-bottle.png);
+}
+
+.icon-poison-cloud {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/poison-cloud.png);
+}
+
+.icon-poison-gas {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/poison-gas.png);
+}
+
+.icon-poison {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/poison.png);
+}
+
+.icon-poker-hand {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/poker-hand.png);
+}
+
+.icon-pollen-dust {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/pollen-dust.png);
+}
+
+.icon-portculis {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/portculis.png);
+}
+
+.icon-potion-ball {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/potion-ball.png);
+}
+
+.icon-pounce {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/pounce.png);
+}
+
+.icon-pouring-chalice {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/pouring-chalice.png);
+}
+
+.icon-powder {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/powder.png);
+}
+
+.icon-prayer {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/prayer.png);
+}
+
+.icon-pretty-fangs {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/pretty-fangs.png);
+}
+
+.icon-profit {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/profit.png);
+}
+
+.icon-psychic-waves {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/psychic-waves.png);
+}
+
+.icon-pulse {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/pulse.png);
+}
+
+.icon-pummeled {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/pummeled.png);
+}
+
+.icon-pumpkin-lantern {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/pumpkin-lantern.png);
+}
+
+.icon-pumpkin-mask {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/pumpkin-mask.png);
+}
+
+.icon-punch {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/punch.png);
+}
+
+.icon-puppet {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/puppet.png);
+}
+
+.icon-pyromaniac {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/pyromaniac.png);
+}
+
+.icon-quake-stomp {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/quake-stomp.png);
+}
+
+.icon-queen-crown {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/queen-crown.png);
+}
+
+.icon-quick-slash {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/quick-slash.png);
+}
+
+.icon-quicksand {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/quicksand.png);
+}
+
+.icon-quill-ink {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/quill-ink.png);
+}
+
+.icon-quill {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/quill.png);
+}
+
+.icon-rabbit {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/rabbit.png);
+}
+
+.icon-radar-dish {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/radar-dish.png);
+}
+
+.icon-radar-sweep {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/radar-sweep.png);
+}
+
+.icon-radial-balance {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/radial-balance.png);
+}
+
+.icon-radioactive {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/radioactive.png);
+}
+
+.icon-ragged-wound {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ragged-wound.png);
+}
+
+.icon-rainbow-star {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/rainbow-star.png);
+}
+
+.icon-raining {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/raining.png);
+}
+
+.icon-rally-the-troops {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/rally-the-troops.png);
+}
+
+.icon-ram {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ram.png);
+}
+
+.icon-rapidshare-arrow {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/rapidshare-arrow.png);
+}
+
+.icon-raven {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/raven.png);
+}
+
+.icon-ray-gun {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ray-gun.png);
+}
+
+.icon-razor-blade {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/razor-blade.png);
+}
+
+.icon-reactor {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/reactor.png);
+}
+
+.icon-reaper-scythe {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/reaper-scythe.png);
+}
+
+.icon-recycle {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/recycle.png);
+}
+
+.icon-regeneration {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/regeneration.png);
+}
+
+.icon-relic-blade {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/relic-blade.png);
+}
+
+.icon-reticule {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/reticule.png);
+}
+
+.icon-revolt {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/revolt.png);
+}
+
+.icon-ribbon {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ribbon.png);
+}
+
+.icon-ribcage {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ribcage.png);
+}
+
+.icon-rifle {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/rifle.png);
+}
+
+.icon-ringed-planet {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ringed-planet.png);
+}
+
+.icon-ringing-bell {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ringing-bell.png);
+}
+
+.icon-riot-shield {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/riot-shield.png);
+}
+
+.icon-roast-chicken {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/roast-chicken.png);
+}
+
+.icon-robe {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/robe.png);
+}
+
+.icon-robot-golem {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/robot-golem.png);
+}
+
+.icon-rock {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/rock.png);
+}
+
+.icon-rocket-flight {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/rocket-flight.png);
+}
+
+.icon-rocket {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/rocket.png);
+}
+
+.icon-rogue {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/rogue.png);
+}
+
+.icon-rolling-bomb {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/rolling-bomb.png);
+}
+
+.icon-rose {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/rose.png);
+}
+
+.icon-round-bottom-flask {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/round-bottom-flask.png);
+}
+
+.icon-round-shield {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/round-shield.png);
+}
+
+.icon-rss {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/rss.png);
+}
+
+.icon-run {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/run.png);
+}
+
+.icon-rune-stone {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/rune-stone.png);
+}
+
+.icon-rune-sword {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/rune-sword.png);
+}
+
+.icon-saber-slash {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/saber-slash.png);
+}
+
+.icon-saber-tooth {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/saber-tooth.png);
+}
+
+.icon-sacrificial-dagger {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sacrificial-dagger.png);
+}
+
+.icon-sad-crab {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sad-crab.png);
+}
+
+.icon-sagittarius {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sagittarius.png);
+}
+
+.icon-salamander {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/salamander.png);
+}
+
+.icon-salt-shaker {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/salt-shaker.png);
+}
+
+.icon-sands-of-time {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sands-of-time.png);
+}
+
+.icon-saphir {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/saphir.png);
+}
+
+.icon-sattelite {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sattelite.png);
+}
+
+.icon-saw-claw {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/saw-claw.png);
+}
+
+.icon-scale-mail {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/scale-mail.png);
+}
+
+.icon-scales {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/scales.png);
+}
+
+.icon-scallop {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/scallop.png);
+}
+
+.icon-scalpel-strike {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/scalpel-strike.png);
+}
+
+.icon-scalpel {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/scalpel.png);
+}
+
+.icon-scarab-beetle {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/scarab-beetle.png);
+}
+
+.icon-scarecrow {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/scarecrow.png);
+}
+
+.icon-scissors {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/scissors.png);
+}
+
+.icon-scorpio {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/scorpio.png);
+}
+
+.icon-scorpion-tail {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/scorpion-tail.png);
+}
+
+.icon-scorpion {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/scorpion.png);
+}
+
+.icon-screaming {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/screaming.png);
+}
+
+.icon-screwdriver {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/screwdriver.png);
+}
+
+.icon-scroll-unfurled {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/scroll-unfurled.png);
+}
+
+.icon-scythe {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/scythe.png);
+}
+
+.icon-sea-dragon {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sea-dragon.png);
+}
+
+.icon-sea-serpent {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sea-serpent.png);
+}
+
+.icon-seated-mouse {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/seated-mouse.png);
+}
+
+.icon-select {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/select.png);
+}
+
+.icon-semi-closed-eye {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/semi-closed-eye.png);
+}
+
+.icon-sentry-gun {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sentry-gun.png);
+}
+
+.icon-serrated-slash {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/serrated-slash.png);
+}
+
+.icon-sewing-needle {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sewing-needle.png);
+}
+
+.icon-shard-sword {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/shard-sword.png);
+}
+
+.icon-shark-jaws {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/shark-jaws.png);
+}
+
+.icon-sharp-crown {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sharp-crown.png);
+}
+
+.icon-sharp-smile {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sharp-smile.png);
+}
+
+.icon-shatter {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/shatter.png);
+}
+
+.icon-shattered-glass {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/shattered-glass.png);
+}
+
+.icon-shattered-sword {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/shattered-sword.png);
+}
+
+.icon-sheikah-eye {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sheikah-eye.png);
+}
+
+.icon-shield-echoes {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/shield-echoes.png);
+}
+
+.icon-shield-reflect {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/shield-reflect.png);
+}
+
+.icon-shield {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/shield.png);
+}
+
+.icon-shieldcomb {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/shieldcomb.png);
+}
+
+.icon-shining-claw {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/shining-claw.png);
+}
+
+.icon-shining-heart {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/shining-heart.png);
+}
+
+.icon-shining-sword {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/shining-sword.png);
+}
+
+.icon-shiny-apple {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/shiny-apple.png);
+}
+
+.icon-shiny-iris {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/shiny-iris.png);
+}
+
+.icon-shiny-purse {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/shiny-purse.png);
+}
+
+.icon-shotgun {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/shotgun.png);
+}
+
+.icon-shoulder-scales {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/shoulder-scales.png);
+}
+
+.icon-shouting {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/shouting.png);
+}
+
+.icon-shuriken {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/shuriken.png);
+}
+
+.icon-sickle {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sickle.png);
+}
+
+.icon-sideswipe {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sideswipe.png);
+}
+
+.icon-silence {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/silence.png);
+}
+
+.icon-sing {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sing.png);
+}
+
+.icon-six-eyes {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/six-eyes.png);
+}
+
+.icon-skeleton-inside {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/skeleton-inside.png);
+}
+
+.icon-skeleton-key {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/skeleton-key.png);
+}
+
+.icon-skid-mark {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/skid-mark.png);
+}
+
+.icon-skull-bolt {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/skull-bolt.png);
+}
+
+.icon-skull-crack {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/skull-crack.png);
+}
+
+.icon-skull-crossed-bones {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/skull-crossed-bones.png);
+}
+
+.icon-skull-in-jar {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/skull-in-jar.png);
+}
+
+.icon-skull-mask {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/skull-mask.png);
+}
+
+.icon-skull-ring {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/skull-ring.png);
+}
+
+.icon-skull-shield {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/skull-shield.png);
+}
+
+.icon-skull-signet {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/skull-signet.png);
+}
+
+.icon-slap {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/slap.png);
+}
+
+.icon-slashed-shield {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/slashed-shield.png);
+}
+
+.icon-slavery-whip {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/slavery-whip.png);
+}
+
+.icon-sleepy {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sleepy.png);
+}
+
+.icon-sliced-bread {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sliced-bread.png);
+}
+
+.icon-slow-blob {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/slow-blob.png);
+}
+
+.icon-sly {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sly.png);
+}
+
+.icon-small-fire {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/small-fire.png);
+}
+
+.icon-smitten {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/smitten.png);
+}
+
+.icon-smoking-finger {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/smoking-finger.png);
+}
+
+.icon-snail {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/snail.png);
+}
+
+.icon-snake-bite {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/snake-bite.png);
+}
+
+.icon-snake-totem {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/snake-totem.png);
+}
+
+.icon-snake {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/snake.png);
+}
+
+.icon-snatch {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/snatch.png);
+}
+
+.icon-snorkel {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/snorkel.png);
+}
+
+.icon-snow-bottle {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/snow-bottle.png);
+}
+
+.icon-snowflake-1 {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/snowflake-1.png);
+}
+
+.icon-snowflake-2 {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/snowflake-2.png);
+}
+
+.icon-snowing {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/snowing.png);
+}
+
+.icon-snowman {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/snowman.png);
+}
+
+.icon-soccer-ball {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/soccer-ball.png);
+}
+
+.icon-sonic-boom {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sonic-boom.png);
+}
+
+.icon-sonic-screech {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sonic-screech.png);
+}
+
+.icon-sonic-shout {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sonic-shout.png);
+}
+
+.icon-space-suit {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/space-suit.png);
+}
+
+.icon-spade-skull {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spade-skull.png);
+}
+
+.icon-spade {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spade.png);
+}
+
+.icon-spanner {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spanner.png);
+}
+
+.icon-sparkling-sabre {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sparkling-sabre.png);
+}
+
+.icon-sparky-bomb {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sparky-bomb.png);
+}
+
+.icon-sparrow {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sparrow.png);
+}
+
+.icon-spartan {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spartan.png);
+}
+
+.icon-spatter {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spatter.png);
+}
+
+.icon-spawn-node {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spawn-node.png);
+}
+
+.icon-spears {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spears.png);
+}
+
+.icon-spectacle-lenses {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spectacle-lenses.png);
+}
+
+.icon-spectacles {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spectacles.png);
+}
+
+.icon-spectre {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spectre.png);
+}
+
+.icon-spider-alt {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spider-alt.png);
+}
+
+.icon-spider-face {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spider-face.png);
+}
+
+.icon-spikeball {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spikeball.png);
+}
+
+.icon-spiked-armor {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spiked-armor.png);
+}
+
+.icon-spiked-collar {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spiked-collar.png);
+}
+
+.icon-spiked-fence {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spiked-fence.png);
+}
+
+.icon-spiked-mace {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spiked-mace.png);
+}
+
+.icon-spiked-shell {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spiked-shell.png);
+}
+
+.icon-spiked-snail {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spiked-snail.png);
+}
+
+.icon-spiked-tentacle {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spiked-tentacle.png);
+}
+
+.icon-spikes-full {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spikes-full.png);
+}
+
+.icon-spikes-half {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spikes-half.png);
+}
+
+.icon-spikes-init {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spikes-init.png);
+}
+
+.icon-spikes {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spikes.png);
+}
+
+.icon-spill {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spill.png);
+}
+
+.icon-spinal-coil {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spinal-coil.png);
+}
+
+.icon-spine-arrow {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spine-arrow.png);
+}
+
+.icon-spinning-blades {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spinning-blades.png);
+}
+
+.icon-spinning-sword {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spinning-sword.png);
+}
+
+.icon-spiral-arrow {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spiral-arrow.png);
+}
+
+.icon-spiral-bloom {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spiral-bloom.png);
+}
+
+.icon-spiral-bottle {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spiral-bottle.png);
+}
+
+.icon-spiral-shell {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spiral-shell.png);
+}
+
+.icon-spiral-thrust {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spiral-thrust.png);
+}
+
+.icon-splash {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/splash.png);
+}
+
+.icon-split-body {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/split-body.png);
+}
+
+.icon-split-cross {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/split-cross.png);
+}
+
+.icon-splurt {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/splurt.png);
+}
+
+.icon-spoon {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spoon.png);
+}
+
+.icon-spoted-flower {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spoted-flower.png);
+}
+
+.icon-spotted-mushroom {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spotted-mushroom.png);
+}
+
+.icon-spotted-wound {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spotted-wound.png);
+}
+
+.icon-spoutnik {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spoutnik.png);
+}
+
+.icon-spray {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spray.png);
+}
+
+.icon-sprint {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sprint.png);
+}
+
+.icon-sprout-disc {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sprout-disc.png);
+}
+
+.icon-sprout {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sprout.png);
+}
+
+.icon-spyglass {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/spyglass.png);
+}
+
+.icon-square-bottle {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/square-bottle.png);
+}
+
+.icon-squid-head {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/squid-head.png);
+}
+
+.icon-squid {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/squid.png);
+}
+
+.icon-stag-head {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/stag-head.png);
+}
+
+.icon-stalagtite {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/stalagtite.png);
+}
+
+.icon-star-prominences {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/star-prominences.png);
+}
+
+.icon-star-pupil {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/star-pupil.png);
+}
+
+.icon-star-sattelites {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/star-sattelites.png);
+}
+
+.icon-star-swirl {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/star-swirl.png);
+}
+
+.icon-staryu {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/staryu.png);
+}
+
+.icon-static {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/static.png);
+}
+
+.icon-steel-claws {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/steel-claws.png);
+}
+
+.icon-steeltoe-boots {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/steeltoe-boots.png);
+}
+
+.icon-steelwing-emblem {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/steelwing-emblem.png);
+}
+
+.icon-stick-splitting {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/stick-splitting.png);
+}
+
+.icon-sticking-plaster {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sticking-plaster.png);
+}
+
+.icon-stigmata {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/stigmata.png);
+}
+
+.icon-stiletto {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/stiletto.png);
+}
+
+.icon-stitched-wound {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/stitched-wound.png);
+}
+
+.icon-stomp {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/stomp.png);
+}
+
+.icon-stone-axe {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/stone-axe.png);
+}
+
+.icon-stone-block {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/stone-block.png);
+}
+
+.icon-stone-crafting {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/stone-crafting.png);
+}
+
+.icon-stone-pile {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/stone-pile.png);
+}
+
+.icon-stone-spear {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/stone-spear.png);
+}
+
+.icon-stone-sphere {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/stone-sphere.png);
+}
+
+.icon-stone-tablet {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/stone-tablet.png);
+}
+
+.icon-stone-throne {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/stone-throne.png);
+}
+
+.icon-stone-tower {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/stone-tower.png);
+}
+
+.icon-stopwatch {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/stopwatch.png);
+}
+
+.icon-strafe {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/strafe.png);
+}
+
+.icon-striking-balls {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/striking-balls.png);
+}
+
+.icon-striking-diamonds {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/striking-diamonds.png);
+}
+
+.icon-strong {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/strong.png);
+}
+
+.icon-suckered-tentacle {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/suckered-tentacle.png);
+}
+
+.icon-suicide {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/suicide.png);
+}
+
+.icon-suits {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/suits.png);
+}
+
+.icon-sun {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sun.png);
+}
+
+.icon-sunbeams {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sunbeams.png);
+}
+
+.icon-sundial {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sundial.png);
+}
+
+.icon-sunken-eye {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sunken-eye.png);
+}
+
+.icon-sunrise {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sunrise.png);
+}
+
+.icon-super-mushroom {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/super-mushroom.png);
+}
+
+.icon-supersonic-arrow {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/supersonic-arrow.png);
+}
+
+.icon-supersonic-bullet {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/supersonic-bullet.png);
+}
+
+.icon-surprised-skull {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/surprised-skull.png);
+}
+
+.icon-surprised {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/surprised.png);
+}
+
+.icon-suspicious {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/suspicious.png);
+}
+
+.icon-swallow {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/swallow.png);
+}
+
+.icon-swamp {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/swamp.png);
+}
+
+.icon-swan {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/swan.png);
+}
+
+.icon-swap-bag {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/swap-bag.png);
+}
+
+.icon-sword-array {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sword-array.png);
+}
+
+.icon-sword-break {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sword-break.png);
+}
+
+.icon-sword-clash {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sword-clash.png);
+}
+
+.icon-sword-hilt {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sword-hilt.png);
+}
+
+.icon-sword-in-stone {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sword-in-stone.png);
+}
+
+.icon-sword-slice {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sword-slice.png);
+}
+
+.icon-sword-smithing {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sword-smithing.png);
+}
+
+.icon-sword-spade {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sword-spade.png);
+}
+
+.icon-sword-spin {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/sword-spin.png);
+}
+
+.icon-syringe {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/syringe.png);
+}
+
+.icon-tank {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/tank.png);
+}
+
+.icon-target-arrows {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/target-arrows.png);
+}
+
+.icon-target-dummy {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/target-dummy.png);
+}
+
+.icon-target-laser {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/target-laser.png);
+}
+
+.icon-target-shot {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/target-shot.png);
+}
+
+.icon-targeted {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/targeted.png);
+}
+
+.icon-targeting {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/targeting.png);
+}
+
+.icon-tattered-banner {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/tattered-banner.png);
+}
+
+.icon-taurus {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/taurus.png);
+}
+
+.icon-teapot {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/teapot.png);
+}
+
+.icon-tear-tracks {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/tear-tracks.png);
+}
+
+.icon-techno-heart {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/techno-heart.png);
+}
+
+.icon-telefrag {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/telefrag.png);
+}
+
+.icon-telepathy {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/telepathy.png);
+}
+
+.icon-teleport {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/teleport.png);
+}
+
+.icon-templar-heart {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/templar-heart.png);
+}
+
+.icon-temptation {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/temptation.png);
+}
+
+.icon-tennis-ball {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/tennis-ball.png);
+}
+
+.icon-tentacle-strike {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/tentacle-strike.png);
+}
+
+.icon-tentacurl {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/tentacurl.png);
+}
+
+.icon-terror {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/terror.png);
+}
+
+.icon-tesla-coil {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/tesla-coil.png);
+}
+
+.icon-tesla-turret {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/tesla-turret.png);
+}
+
+.icon-tesla {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/tesla.png);
+}
+
+.icon-test-tubes {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/test-tubes.png);
+}
+
+.icon-thermometer-scale {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/thermometer-scale.png);
+}
+
+.icon-third-eye {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/third-eye.png);
+}
+
+.icon-thor-fist {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/thor-fist.png);
+}
+
+.icon-thorn-helix {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/thorn-helix.png);
+}
+
+.icon-thorned-arrow {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/thorned-arrow.png);
+}
+
+.icon-thorny-vine {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/thorny-vine.png);
+}
+
+.icon-three-keys {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/three-keys.png);
+}
+
+.icon-three-leaves {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/three-leaves.png);
+}
+
+.icon-thrown-charcoal {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/thrown-charcoal.png);
+}
+
+.icon-thrown-daggers {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/thrown-daggers.png);
+}
+
+.icon-thrown-knife {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/thrown-knife.png);
+}
+
+.icon-thrown-spear {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/thrown-spear.png);
+}
+
+.icon-thrust {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/thrust.png);
+}
+
+.icon-thunder-skull {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/thunder-skull.png);
+}
+
+.icon-thunder-struck {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/thunder-struck.png);
+}
+
+.icon-thunderball {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/thunderball.png);
+}
+
+.icon-tic-tac-toe {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/tic-tac-toe.png);
+}
+
+.icon-tick {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/tick.png);
+}
+
+.icon-tied-scroll {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/tied-scroll.png);
+}
+
+.icon-time-bomb {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/time-bomb.png);
+}
+
+.icon-time-trap {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/time-trap.png);
+}
+
+.icon-tinker {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/tinker.png);
+}
+
+.icon-toad-teeth {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/toad-teeth.png);
+}
+
+.icon-tombstone {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/tombstone.png);
+}
+
+.icon-tooth {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/tooth.png);
+}
+
+.icon-top-hat {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/top-hat.png);
+}
+
+.icon-top-paw {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/top-paw.png);
+}
+
+.icon-torch {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/torch.png);
+}
+
+.icon-tornado {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/tornado.png);
+}
+
+.icon-totem-head {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/totem-head.png);
+}
+
+.icon-tower-fall {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/tower-fall.png);
+}
+
+.icon-trade {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/trade.png);
+}
+
+.icon-trample {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/trample.png);
+}
+
+.icon-transfuse {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/transfuse.png);
+}
+
+.icon-transportation-rings {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/transportation-rings.png);
+}
+
+.icon-tread {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/tread.png);
+}
+
+.icon-treasure-map {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/treasure-map.png);
+}
+
+.icon-tree-branch {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/tree-branch.png);
+}
+
+.icon-trefoil-lily {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/trefoil-lily.png);
+}
+
+.icon-trefoil-shuriken {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/trefoil-shuriken.png);
+}
+
+.icon-tribal-mask {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/tribal-mask.png);
+}
+
+.icon-trident {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/trident.png);
+}
+
+.icon-trigger-hurt {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/trigger-hurt.png);
+}
+
+.icon-trilobite {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/trilobite.png);
+}
+
+.icon-triorb {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/triorb.png);
+}
+
+.icon-triple-claws {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/triple-claws.png);
+}
+
+.icon-triple-corn {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/triple-corn.png);
+}
+
+.icon-triple-lock {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/triple-lock.png);
+}
+
+.icon-triple-needle {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/triple-needle.png);
+}
+
+.icon-triple-skulls {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/triple-skulls.png);
+}
+
+.icon-tripwire {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/tripwire.png);
+}
+
+.icon-tron-arrow {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/tron-arrow.png);
+}
+
+.icon-trophy {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/trophy.png);
+}
+
+.icon-trousers {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/trousers.png);
+}
+
+.icon-tune-pitch {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/tune-pitch.png);
+}
+
+.icon-turd {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/turd.png);
+}
+
+.icon-turret {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/turret.png);
+}
+
+.icon-turtle-shell {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/turtle-shell.png);
+}
+
+.icon-turtle {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/turtle.png);
+}
+
+.icon-twirly-flower {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/twirly-flower.png);
+}
+
+.icon-twister {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/twister.png);
+}
+
+.icon-two-feathers {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/two-feathers.png);
+}
+
+.icon-two-shadows {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/two-shadows.png);
+}
+
+.icon-tyre {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/tyre.png);
+}
+
+.icon-ubisoft-sun {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ubisoft-sun.png);
+}
+
+.icon-udder {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/udder.png);
+}
+
+.icon-ultrasound {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/ultrasound.png);
+}
+
+.icon-umbrella {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/umbrella.png);
+}
+
+.icon-uncertainty {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/uncertainty.png);
+}
+
+.icon-underhand {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/underhand.png);
+}
+
+.icon-unfriendly-fire {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/unfriendly-fire.png);
+}
+
+.icon-unlit-bomb {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/unlit-bomb.png);
+}
+
+.icon-unlit-candelabra {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/unlit-candelabra.png);
+}
+
+.icon-unplugged {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/unplugged.png);
+}
+
+.icon-unstable-projectile {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/unstable-projectile.png);
+}
+
+.icon-usable {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/usable.png);
+}
+
+.icon-valley {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/valley.png);
+}
+
+.icon-vanilla-flower {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/vanilla-flower.png);
+}
+
+.icon-vial {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/vial.png);
+}
+
+.icon-vile-fluid {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/vile-fluid.png);
+}
+
+.icon-vine-flower {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/vine-flower.png);
+}
+
+.icon-vine-leaf {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/vine-leaf.png);
+}
+
+.icon-vine-whip {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/vine-whip.png);
+}
+
+.icon-vintage-robot {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/vintage-robot.png);
+}
+
+.icon-viola {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/viola.png);
+}
+
+.icon-virgo {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/virgo.png);
+}
+
+.icon-virus {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/virus.png);
+}
+
+.icon-visored-helm {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/visored-helm.png);
+}
+
+.icon-volcano {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/volcano.png);
+}
+
+.icon-vomiting {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/vomiting.png);
+}
+
+.icon-voodoo-doll {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/voodoo-doll.png);
+}
+
+.icon-vortex {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/vortex.png);
+}
+
+.icon-vulture {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/vulture.png);
+}
+
+.icon-walking-boot {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/walking-boot.png);
+}
+
+.icon-wasp-sting {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/wasp-sting.png);
+}
+
+.icon-water-bolt {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/water-bolt.png);
+}
+
+.icon-water-drop {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/water-drop.png);
+}
+
+.icon-water-splash {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/water-splash.png);
+}
+
+.icon-wave-crest {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/wave-crest.png);
+}
+
+.icon-wave-strike {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/wave-strike.png);
+}
+
+.icon-wavy-chains {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/wavy-chains.png);
+}
+
+.icon-wavy-itinerary {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/wavy-itinerary.png);
+}
+
+.icon-wax-seal {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/wax-seal.png);
+}
+
+.icon-web-spit {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/web-spit.png);
+}
+
+.icon-weight-crush {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/weight-crush.png);
+}
+
+.icon-wheat {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/wheat.png);
+}
+
+.icon-whip {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/whip.png);
+}
+
+.icon-whiplash {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/whiplash.png);
+}
+
+.icon-whirlwind {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/whirlwind.png);
+}
+
+.icon-white-book-0 {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/white-book-0.png);
+}
+
+.icon-white-book-1 {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/white-book-1.png);
+}
+
+.icon-white-book-2 {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/white-book-2.png);
+}
+
+.icon-white-book-3 {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/white-book-3.png);
+}
+
+.icon-white-book-4 {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/white-book-4.png);
+}
+
+.icon-white-book-5 {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/white-book-5.png);
+}
+
+.icon-white-book-6 {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/white-book-6.png);
+}
+
+.icon-white-book-7 {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/white-book-7.png);
+}
+
+.icon-white-book-8 {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/white-book-8.png);
+}
+
+.icon-white-book-9 {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/white-book-9.png);
+}
+
+.icon-white-book-cd {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/white-book-cd.png);
+}
+
+.icon-white-book {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/white-book.png);
+}
+
+.icon-white-cat {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/white-cat.png);
+}
+
+.icon-white-tower {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/white-tower.png);
+}
+
+.icon-wildfires {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/wildfires.png);
+}
+
+.icon-william-tell {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/william-tell.png);
+}
+
+.icon-windmill {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/windmill.png);
+}
+
+.icon-wine-glass {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/wine-glass.png);
+}
+
+.icon-wing-cloak {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/wing-cloak.png);
+}
+
+.icon-winged-arrow {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/winged-arrow.png);
+}
+
+.icon-winged-emblem {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/winged-emblem.png);
+}
+
+.icon-winged-shield {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/winged-shield.png);
+}
+
+.icon-winged-sword {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/winged-sword.png);
+}
+
+.icon-wingfoot {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/wingfoot.png);
+}
+
+.icon-witch-flight {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/witch-flight.png);
+}
+
+.icon-wizard-staff {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/wizard-staff.png);
+}
+
+.icon-wolf-head {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/wolf-head.png);
+}
+
+.icon-wolf-howl {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/wolf-howl.png);
+}
+
+.icon-wolf-trap {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/wolf-trap.png);
+}
+
+.icon-wolverine-claws {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/wolverine-claws.png);
+}
+
+.icon-wood-axe {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/wood-axe.png);
+}
+
+.icon-wood-pile {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/wood-pile.png);
+}
+
+.icon-wooden-door {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/wooden-door.png);
+}
+
+.icon-wooden-sign {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/wooden-sign.png);
+}
+
+.icon-world {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/world.png);
+}
+
+.icon-worm-mouth {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/worm-mouth.png);
+}
+
+.icon-worried-eyes {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/worried-eyes.png);
+}
+
+.icon-wrapped-heart {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/wrapped-heart.png);
+}
+
+.icon-wrapped-sweet {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/wrapped-sweet.png);
+}
+
+.icon-wrecking-ball {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/wrecking-ball.png);
+}
+
+.icon-wrench {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/wrench.png);
+}
+
+.icon-wyvern {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/wyvern.png);
+}
+
+.icon-zebra-shield {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/zebra-shield.png);
+}
+
+.icon-zeus-sword {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/zeus-sword.png);
+}
+
+.icon-zigzag-leaf {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/zigzag-leaf.png);
+}
+
+.icon-zigzag-tune {
+	background-image: url(https://donjon.bin.sh/5e/quickref/img/zigzag-tune.png);
 }
